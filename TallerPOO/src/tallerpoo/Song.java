@@ -70,12 +70,34 @@ public class Song {
         return date;
     }
 
+    /**
+     * 
+     * @return Devuelve la fecha como un entero
+     */
+    public int getDateInt() {
+        String[] splitDate = date.split("-");
+        String dateSplited = splitDate[0]+splitDate[1]+splitDate[2];
+        int dateInt = Integer.parseInt(dateSplited);
+        return dateInt;
+    }
+
     public void setDate(String date) {
         this.date = date;
     }
 
     public String getDuration() {
         return duration;
+    }
+
+    /**
+     * 
+     * @return devuelve la duración como un entero
+     */
+    public int getDurationInt() {
+        String[] splitDuration = duration.split(":");
+        String durationSplited = splitDuration[0]+splitDuration[1];
+        int durationInt = Integer.parseInt(durationSplited);
+        return durationInt;
     }
 
     public void setDuration(String duration) {

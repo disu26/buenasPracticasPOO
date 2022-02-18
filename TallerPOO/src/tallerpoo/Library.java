@@ -2,11 +2,12 @@
 package tallerpoo;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 /**
- *
+ * Clase Biblioteca donde se guardan todas las canciones
+ * Library nuevaLibrary = new Library()
+ * nuevaLibrary.addSong(nuevaCancion)
+ * 
  * @version 1.00.000 2022-02-18
  * @author Dímar Andrey Suárez Hidalgo - dimar260212@gmail.com
  * @since 1.00.000 2022-02-18
@@ -39,7 +40,7 @@ public class Library {
      */
     public ArrayList<Song> filterGenre(String genre){
         /**
-         * Se crea una nueva libreria que estar+a filtrada
+         * Se crea una nueva libreria que estara filtrada
          */
         ArrayList<Song> filterLibrary = new ArrayList<>();
         
